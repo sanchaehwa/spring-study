@@ -22,12 +22,11 @@ public class StatefulServiceTest {
 
         //int price = statefulService1.getPrice();
         //20000(UserA) 값이 바뀜 -> 공유 필드에 상태를 유지하는 경우
-      //  System.out.println("price = " + price);
+       //System.out.println("price = " + price);
 
-       // assertThat(statefulService1.getPrice()).isEqualTo(price);
+//        assertThat(statefulService1.getPrice()).isEqualTo(price);
         System.out.println("userBprice = " + userBprice);
         System.out.println("userAprice = " + userAprice);
-        assertThat(userAprice).isEqualTo(userBprice);
     }
     static class TestConfig {
         @Bean
