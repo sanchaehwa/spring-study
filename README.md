@@ -1,4 +1,7 @@
-## 🦖 Spring-Study
+## 🍃  Spring-Study
+
+Spring 핵심 기능 / 구조에 대해 공부하는 레포
+### 학습 내용 정리
 |Contents||
 |------|--|
 |[스프링 기본편(복습)](https://patch-carpenter-1ef.notion.site/19fcf10cd2e780588c57cd20ca62dbdf)|~ 03.08 |
