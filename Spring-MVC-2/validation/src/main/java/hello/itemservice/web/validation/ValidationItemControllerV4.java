@@ -17,7 +17,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.List;
 
-@Slf4j
+@Slf4j //log.info(), log.error() 같은 느낌
 @Controller
 @RequestMapping("/validation/v4/items")
 @RequiredArgsConstructor
