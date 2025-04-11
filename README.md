@@ -1,11 +1,11 @@
-## 🍃  Spring-Study
+# 25- Spring-Study
+
+### 진행 날짜
+2025.02. ~
 
 ### 학습 내용 정리
-|Contents||
+| 강의명 |진행 여부|
 |------|--|
-|[스프링 기본편(복습)](https://patch-carpenter-1ef.notion.site/19fcf10cd2e780588c57cd20ca62dbdf)|~ 03.08 |
-|[스프링 MVC 1편](https://patch-carpenter-1ef.notion.site/MVC-1-1a3cf10cd2e780068525f4513b6b3f1c?pvs=4)| ~ 03.29|
-|[스프링 MVC 2편](https://patch-carpenter-1ef.notion.site/MVC-2-1cacf10cd2e780c98577d6ba9aff19e3?pvs=4)| ~|
-
-
-
+|[스프링 기본편(복습)](https://github.com/sanchaehwa/Spring-Study/tree/main/Spring-Basic/doc)|✅|
+|[스프링 MVC 1편](https://github.com/sanchaehwa/Spring-Study/tree/main/Spring-MVC-1/doc)|✅|
+|[스프링 MVC 2편](https://github.com/sanchaehwa/Spring-Study/tree/main/Spring-MVC-2/doc)|  |
