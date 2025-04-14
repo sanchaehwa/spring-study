@@ -18,7 +18,7 @@ class SessionManagerTest {
 //세션 조회
         Object result = sessionManager.getSession(request);
         assertThat(result).isEqualTo(member);
-//세션 만료
+        //세션 만료
         sessionManager.expire(request); //Session 삭제
         Object expired = sessionManager.getSession(request);
         assertThat(expired).isNull();

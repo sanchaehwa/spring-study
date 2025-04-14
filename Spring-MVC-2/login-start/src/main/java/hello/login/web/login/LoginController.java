@@ -101,4 +101,24 @@ public class LoginController {
         }
         return "redirect:/";
     }
+    //로그인 이후 redirect 처리
+   // @PostMapping("/login")
+    public String loginV4 (@Valid @ModelAttribute LoginForm form, BindingResult bindingResult, @RequestParam(defaultValue = "/") String redirectURL,HttpServletRequest request) {
+        if (bindingResult.hasErrors()) {
+            return "login/loginForm"; //바인딩에서 에러가 생기면
+        }
+        Member loginMember = loginService.login(form.getLoginId(), form.getPassword());
+        log.info("login? {}", loginMember);
+        if (loginMember == null) {
+            bindingResult.reject("loginFail","아이디 또는 비밀번호가 맞지 않습니다.");
+            return "login/loginForm";
+        }
+        //로그인 성공처리
+        HttpSession session = request.getSession();
+        //세션 유지
+        session.setAttribute(SessionConst.LOGIN_MEMBER, loginMember);
+
+        return "redirect:/" + redirectURL;
+    }
+
 }
