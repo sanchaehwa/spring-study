@@ -1,4 +1,4 @@
-# 25- Spring-Study
+## spring study
 
 ### 진행 날짜
 2025.02. ~
