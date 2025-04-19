@@ -1,31 +1,40 @@
 package hellojpa;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.Date;
 
 @Entity
+@Table
 public class Member {
 
-    @Id //PK
-    private Long id;
-    private String name;
+        public Member() {
 
-    public Long getId() {
-        return id;
-    }
+        }
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        private Long id;
+        @Column(name = "name",nullable = false)
+        private String username;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+        public Long getId() {
+                return id;
+        }
 
-    public String getName() {
-        return name;
-    }
+        public void setId(Long id) {
+                this.id = id;
+        }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+        public String getUsername() {
+                return username;
+        }
 
-
-
+        public void setUsername(String username) {
+                this.username = username;
+        }
 }
+
+
+

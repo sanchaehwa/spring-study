@@ -44,16 +44,32 @@ public class JpaMain {
 //            Member findMember = em.find(Member.class, 1L);
 //            findMember.setName("Apple");
             //Member 객체를 대상으로 Query : 객체 지향 쿼리
-            List<Member> result = em.createQuery("select m from Member as m", Member.class)
-                    //가져올 부분을 설정해주는 페이징 네이션 (setFirst ~ setMax)
-                    .setFirstResult(0)
-                    .setMaxResults(8)
-                    .getResultList();
-            for (Member member : result) {
-                System.out.println(member.getName());
-            }
+//            List<Member> result = em.createQuery("select m from Member as m", Member.class)
+//                    //가져올 부분을 설정해주는 페이징 네이션 (setFirst ~ setMax)
+//                    .setFirstResult(0)
+//                    .setMaxResults(8)
+//                    .getResultList();
+//            for (Member member : result) {
+//                System.out.println(member.getName());
+            Member member = new Member();
+//            //Member 객체 1 생성
+//            member.setId(1L);
+//            member.setUsername("A");
+//            member.setRoleType(RoleType.USER);
+//            //Member 객체 2 생성
+//            member.setId(2L);
+//            member.setUsername("B");
+//            member.setRoleType(RoleType.ADMIN);
+           // Member 객체 3 생성
+            //  member.setId(3L);
+            member.setUsername("C");
+            //member.setRoleType(RoleType.GUEST);
+
+            em.persist(member);
+
             tx.commit();
-        }catch (Exception e) {
+        }
+        catch (Exception e) {
             tx.rollback();
         }finally {
             em.close();
