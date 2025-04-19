@@ -20,3 +20,8 @@ Thumbs.db
 
 # 모든 .gitattributes 무시 (루트 + 하위 폴더 포함)
 **/.gitattributes
+
+
+**/application.properties
+**/application.yml
+**/persistence.xml
